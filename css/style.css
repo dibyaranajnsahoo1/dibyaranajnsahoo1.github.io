@@ -61,7 +61,7 @@ header{
   
   @media (min-width: 1200px) {
     .container {
-      max-width: 1152px;
+      max-width: 1151px;
     }
   }
 
@@ -75,6 +75,7 @@ header nav .left a{
     -moz-transition:all .3s ease;
     -ms-transition:all .3s ease;
     -o-transition:all .3s ease;
+    
 }
 header nav .left a:hover{
     color:var(--primary);
@@ -774,3 +775,57 @@ footer .copyright{
     text-align: center;
     text-underline-offset: 3px ;
 }
+#mai-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73,
+      2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+
+  header #cont{
+    /* border: 2px solid rgb(228, 225, 225); */
+    width: 63%;
+    margin: auto;
+    margin-top: 180px;
+ }
+ header{
+   
+    width: 100%;
+    border: 0.01px solid 
+    #161616;
+
+ }
+ #main-nav{
+    position: fixed;
+    /* background-color: red; */
+    /* border: 2px solid white; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: 
+    #161616;
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73,
+      2px 2px 5px rgba(94, 104, 121, 0.288);
+ }
+ #iw{
+    border-radius: 50%;
+    /* box-shadow: rgba(233, 229, 229, 0.35) 0px -190px 136px -128px inset; */
+    box-shadow: rgba(236, 224, 224, 0.008) 0px -23px 25px 0px inset, rgba(241, 234, 234, 0.067) 0px -36px 30px 0px inset, rgba(249, 240, 240, 0) 0px -79px 40px 0px inset, rgba(240, 236, 236, 0.037) 0px 2px 1px, rgba(248, 243, 243, 0) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(241, 239, 239, 0.012) 0px 16px 8px, rgba(239, 236, 236, 0.06) 0px 32px 16px;
+ }
