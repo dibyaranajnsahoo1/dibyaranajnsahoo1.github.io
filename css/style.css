@@ -1,7 +1,7 @@
 @import 'utilities.css';
 :root{
-    --primary:#3DCFD3;
-    --dark:#161616;
+    --primary:#8504fd;
+    --dark:#151515;
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
@@ -30,9 +30,7 @@ header{
     padding:0 15px;
     margin:0 auto;
 }
-.overlay{
-   
-}
+
 
 
 
@@ -43,8 +41,8 @@ header{
 
 @media (min-width: 576px) {
     .container {
-      max-width: 540px;
-    }
+        max-width: 540px;
+      }
   }
   
   @media (min-width: 768px) {
@@ -116,10 +114,15 @@ header nav .branding{
 .hero .right {
     margin-top:-7rem;
 }
-
+#s{
+    
+    margin-top: -80px;
+    margin-bottom: -80px;
+}
 section{
     padding:6rem 0;
 }
+
 section.about .about-me-img{
     height:450px;
 }
@@ -186,21 +189,23 @@ section.about .social a img{
 .section-heading + p{
    color:var(--ternary);
    font-family:'Lato', sans-serif;
-   margin-bottom:8rem;
+   margin-bottom:6rem;
     text-align: center;
 }
 section.services{
     background:var(--light);
+ 
 }
 section.services .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap:2rem;
     grid-row-gap:6rem;
+    
 }
 section.services .card-wrapper .card{
     background:var(--pure);
-    padding: 3rem 2rem;
+    padding: 1rem 0rem;
     position:relative;
     padding-top:5rem;
     text-align: center;
@@ -209,6 +214,7 @@ section.services .card-wrapper .card{
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    
 }
 section.services .card-wrapper .card img{
     position: absolute;
@@ -240,14 +246,15 @@ section.services .card-wrapper .card:hover h2, section.services .card-wrapper .c
 
 section.freelancer{
     text-align: center;
-    background:linear-gradient(#161616 ,#161616 ),url(../ig/dibya.png);
+    background:linear-gradient(#565353 ,#000000 );
     color:var(--pure);
-    /* clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%); */
-    padding-bottom:1rem;
+    background: -webkit-radial-gradient();
 }
+
+
 section.freelancer h1{
     font-size:3rem;
-    margin-bottom:0.5rem;
+    /* margin-bottom:0.5rem; */
 }
 section.freelancer p{
     font-size:1.3rem;
@@ -266,6 +273,7 @@ section.reviews .slider .slide img{
     object-fit:cover;
     margin-bottom:2rem;
 }
+
 section.reviews .slider .slide{
     text-align: center;
     display: flex;
@@ -346,6 +354,13 @@ section.work .card-wrapper .card .overlay{
 section.work .card-wrapper .card:hover .overlay{
     opacity:1;
 }
+.card-wrapper>div{
+    margin-bottom: 30px;
+
+}
+.card-wrapper{
+    margin-bottom: -30px;
+}
 
 section.work .card-wrapper .card .overlay a{
     color:var(--secondary);
@@ -358,7 +373,7 @@ section.work .card-wrapper .card img{
 
 section.blog{
     background:var(--dark);
-    clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+   
     padding-bottom:12rem;
 }
 section.blog .section-heading{
@@ -416,7 +431,8 @@ section.contact .card-wrapper .card{
     text-align: center;
 }
 section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 10%;
 }
 section.contact .card-wrapper .card h1{
     font-weight:400;
@@ -426,7 +442,7 @@ section.contact .card-wrapper .card h6{
     font-size:1rem;
     color:var(--ternary);
     font-weight:400;
-    margin-bottom:4rem;
+    margin-bottom:6rem;
 }
 
 section.contact .input-wrap{
@@ -445,6 +461,7 @@ section.contact .input-wrap-2 input{
 section.contact input{
     padding:0.5rem;
     border:1px solid var(--light);
+    border-radius: 10px;
     font-size: 0.9rem;
 }
 section.contact .input-wrap-2 textarea{
@@ -458,12 +475,13 @@ section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
 section.contact .btn-wrapper{
     text-align: center;
     margin-top:2rem;
+   
 }
 
 footer{
     background:var(--dark);
     text-align: center;
-    padding:5rem 0;
+    padding:1rem 0;
 }
 footer .footer-logo{
     margin-bottom:3rem;
@@ -478,6 +496,7 @@ footer .footer-socials{
 }
 footer .copyright{
     color:var(--ternary);
+
 }
 
 
@@ -498,28 +517,30 @@ footer .copyright{
 .hamberger img{
     width:30px;
 }
+#ss{
+    border: 24px solid red;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1001;
+    background:var(--light);
+    width:100%;
+    height:100%;
+    padding:2rem;
+    padding-top:5rem;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition:all .5s ease-in-out;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
 
-.mobile-nav{
-   position: fixed;
-   top:0;
-   left:0;
-   z-index:1001;
-   background:var(--light);
-   width:100%;
-   height:100%;
-   padding:2rem;
-   padding-top:5rem;
-   transform: translateX(-100%);
-   -webkit-transform: translateX(-100%);
-   -moz-transform: translateX(-100%);
-   -ms-transform: translateX(-100%);
-   -o-transform: translateX(-100%);
-   transition:all .5s ease-in-out;
-   -webkit-transition:all .5s ease-in-out;
-   -moz-transition:all .5s ease-in-out;
-   -ms-transition:all .5s ease-in-out;
-   -o-transition:all .5s ease-in-out;
 }
+
 .open{
     transform:translateX(0);
     -webkit-transform:translateX(0);
@@ -540,18 +561,22 @@ footer .copyright{
     width:30px;
 }
 
-.mobile-nav ul{
-    list-style-type: none;
-}
-.mobile-nav ul li a{
-    color:var(--secondary);
-    text-decoration:none;
-    font-size: 2rem;
-}
+
 
 @media (max-width:1024px){
+    .mobile-nav{
+        display: flex;
+    }
     header #main-nav{
-        display:none;
+        /* display:none; */
+        display: flex;
+        width: 100%;
+    }
+    #det{
+        display: flex;
+        width: 20%;
+        /* border: 2px solid red; */
+       
     }
     .hamberger{
         display: block;
@@ -565,9 +590,7 @@ footer .copyright{
     .hero{
         padding-top:10rem;
     }
-    header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
-    }
+  
     section.about .about-me-img{
         height: 360px;
     }
@@ -580,28 +603,41 @@ footer .copyright{
     section.blog .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
-    section.blog{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
-    }
+   
 }
 
 @media (max-width:576px){
     .hero{
         flex-direction: column;
     }
-    header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    #qq{
+        display: grid;
+        /* grid-template-columns: repeat(1,1fr); */
+       
     }
+   
     .hero .right{
         position: absolute;
         top:260px;
         padding:0 1rem;
-        background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+        
+        /* background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)); */
     }
     .hero .left{
         margin-top:-5rem;
         margin-right: -9rem;
         padding-bottom:4rem;
+        
+    }
+    #ri h1{
+       font-size: 16px;
+    }
+    #ri div{
+        /* width: 1px; */
+        font-size: 10px;
+    }
+    #qq1{
+        margin-top: 14px;
     }
     .about-inner-wrap{
         flex-direction: column;
@@ -624,7 +660,7 @@ footer .copyright{
         line-height:1.2;
     }
     section.freelancer{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        
         padding-bottom: 8rem;
     }
     section.reviews .slider .slide{
@@ -641,6 +677,29 @@ footer .copyright{
     }
     section.contact .input-wrap{
         grid-template-columns: repeat(1, 1fr);
+    }
+    #mai-nav{
+        width: 30%;
+        /* border: 2px solid red; */
+    }
+    #det{
+        width: 30%;
+        /* border: 2px solid red; */
+        /* margin-left: -80px; */
+    }
+    #det a{
+         font-size: 10px;
+         /* border: 2px solid red; */
+    }
+    nav{
+        /* border: 2px solid red; */
+        
+    }
+    .branding{
+        display: none;
+    }
+     #bt{
+        display:none ;
     }
 }
 .MyName{
@@ -677,6 +736,7 @@ footer .copyright{
     border: 1px solid #3dcfd3;
     color: #3dcfd3;
     font-size: 20px;
+    
 }
 
 .hero{
@@ -827,5 +887,34 @@ footer .copyright{
  #iw{
     border-radius: 50%;
     /* box-shadow: rgba(233, 229, 229, 0.35) 0px -190px 136px -128px inset; */
-    box-shadow: rgba(236, 224, 224, 0.008) 0px -23px 25px 0px inset, rgba(241, 234, 234, 0.067) 0px -36px 30px 0px inset, rgba(249, 240, 240, 0) 0px -79px 40px 0px inset, rgba(240, 236, 236, 0.037) 0px 2px 1px, rgba(248, 243, 243, 0) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(241, 239, 239, 0.012) 0px 16px 8px, rgba(239, 236, 236, 0.06) 0px 32px 16px;
+    box-shadow: rgba(27, 7, 244, 0.195) 0px -23px 25px 0px inset, rgba(31, 3, 245, 0.14) 0px -36px 30px 0px inset, 
+    rgba(76, 5, 254, 0.193) 0px -79px 40px 0px inset,
+     rgba(55, 4, 238, 0.181) 0px 2px 1px, 
+     rgba(78, 6, 246, 0.392) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+      rgba(6, 38, 219, 0.253) 0px 16px 8px,
+       rgba(239, 236, 236, 0.06) 0px 32px 16px;
  }
+ .card{
+    margin-bottom: 90px;
+
+ }
+ #sd{
+    margin-bottom: -90px;
+ }
+ #form input{
+    border: 1px solid rgba(12, 12, 12, 0.158);
+    
+ }
+ #form textarea{
+    border: 1px solid rgba(12, 12, 12, 0.158);
+ }
+#bt{
+    border-radius: 10px;
+}
+#btnnn{
+    border-radius: 190px;
+}
+#send{
+    border-radius: 50px;
+}
