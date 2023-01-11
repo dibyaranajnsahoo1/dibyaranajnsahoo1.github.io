@@ -679,28 +679,37 @@ footer .copyright{
         grid-template-columns: repeat(1, 1fr);
     }
     #mai-nav{
-        width: 30%;
+        width: auto;
         /* border: 2px solid red; */
     }
     #det{
-        width: 30%;
+        /* width: 25%; */
         /* border: 2px solid red; */
-        /* margin-left: -80px; */
+        margin-left: -20px;
     }
     #det a{
          font-size: 10px;
          /* border: 2px solid red; */
     }
-    nav{
-        /* border: 2px solid red; */
-        
-    }
+
     .branding{
         display: none;
     }
      #bt{
-        display:none ;
+        /* width: 10%; */
+        font-size: 8px;
+        padding: 10px;
     }
+    #s2{
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width:576px){
+    #det a{
+        font-size: 7px;
+        /* border: 2px solid red; */
+   }
 }
 .MyName{
     position: relative;
@@ -890,13 +899,22 @@ footer .copyright{
  #iw{
     border-radius: 50%;
     /* box-shadow: rgba(233, 229, 229, 0.35) 0px -190px 136px -128px inset; */
-    box-shadow: rgba(27, 7, 244, 0.195) 0px -23px 25px 0px inset, rgba(31, 3, 245, 0.14) 0px -36px 30px 0px inset, 
-    rgba(76, 5, 254, 0.193) 0px -79px 40px 0px inset,
+    box-shadow: #8504fd55 0px -23px 25px 0px inset, rgba(31, 3, 245, 0.14) 0px -36px 30px 0px inset, 
+    #8504fd38 0px -79px 40px 0px inset,
+    #8504fd37 0px 2px 1px, 
+    #8504fd3c 0px 4px 2px,
+    #8504fd3f 0px 8px 4px, 
+    #8504fd27 0px 16px 8px,
+    #8504fd32 0px 32px 16px;
+ }
+ #iw:hover{
+    box-shadow: #8504fd3f 0px -23px 25px 0px inset, rgba(31, 3, 245, 0.14) 0px -36px 30px 0px inset, 
+    rgba(19, 4, 223, 0.36) 0px -79px 40px 0px inset,
      rgba(55, 4, 238, 0.181) 0px 2px 1px, 
-     rgba(78, 6, 246, 0.392) 0px 4px 2px,
-      rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-      rgba(6, 38, 219, 0.253) 0px 16px 8px,
-       rgba(239, 236, 236, 0.06) 0px 32px 16px;
+     #8504fd3f 0px 4px 2px,
+      rgba(49, 4, 250, 0.219) 0px 8px 4px, 
+      rgba(6, 38, 219, 0.464) 0px 16px 8px,
+      #8504fd32 0px 32px 16px;
  }
  .card{
     margin-bottom: 90px;
@@ -923,5 +941,10 @@ footer .copyright{
 }
 .social img:hover{
     background: white;
+
+}
+#s2{
+    width: 80%;
+    height: 80%;
 
 }
