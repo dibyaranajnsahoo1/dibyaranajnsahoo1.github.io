@@ -8,7 +8,7 @@ html
 :root
 /* #00a78e */
 {
-    --main-color:#8248b9;
+    --main-color:#174340;
     --shadow-black-100:0 5px 15px rgba(0,0,0,0.2);
     --black-900:#000;
     --black-400:#646f87;
@@ -265,7 +265,7 @@ img
 .home-section
 {
     position: relative;
-    background-color: #e38de0;
+    background-color: #ffffff;
     z-index: 1;
     overflow-x: hidden;
     padding-top: 80px;
@@ -334,7 +334,7 @@ img
 }
 .btn-1:hover{
     background-color: white;
-    border: 3px solid #8248b9;
+    border: 3px solid #174340;
     color: var(--main-color);
 
 }
@@ -855,7 +855,7 @@ img
     box-shadow: var(--shadow-black-100);
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #8248b9;
+    border: 1px solid #174340;
 }
 .contact-section .contact-item-inner i
 {
@@ -894,7 +894,7 @@ img
 {
     margin: 0 0 25px;
     border-radius: 30px;
-    border: 1px solid #8248b9;
+    border: 1px solid #174340;
     background-color: var(--black-100);
     box-shadow: var(--shadow-black-100);
 }
@@ -1066,7 +1066,7 @@ footer .copyright-text
 #res{
     padding: 5px 10px;
     border-radius: 10px;
-    border: 2px #8248b9 solid;
+    border: 2px #174340 solid;
     background: none;
     /* color: #8248b9; */
     font-size: 16px;
